@@ -1,7 +1,7 @@
 {
   "name": "dev",
   "version": "0.1.0",
-  "description": "Developer workflows: conventional commits",
+  "description": "Developer workflows: conventional commits and pull requests",
   "author": {
     "name": "Lee Cheneler"
   }
