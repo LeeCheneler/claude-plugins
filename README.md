@@ -1,18 +1,18 @@
-# claude-plugins
+# leecheneler-plugins
 
 Personal [Claude Code plugins](https://docs.anthropic.com/en/docs/claude-code/plugins) marketplace. Opinionated developer workflows for conventional commits, pull requests, and GitHub issue linking.
 
 ## Installation
 
 ```sh
-/plugin marketplace add LeeCheneler/claude-plugins
-/plugin install dev@claude-plugins
+/plugin marketplace add LeeCheneler/leecheneler-plugins
+/plugin install dev@leecheneler-plugins
 ```
 
 ## Updating
 
 ```sh
-/plugin marketplace update claude-plugins
+/plugin marketplace update leecheneler-plugins
 ```
 
 ## Plugins
