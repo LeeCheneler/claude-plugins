@@ -1,0 +1,11 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Lee Cheneler"
+  },
+  "metadata": {
+    "description": "Claude Code plugins marketplace",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": []
+}
