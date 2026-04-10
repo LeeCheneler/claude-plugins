@@ -1,6 +1,6 @@
 # leecheneler-plugins
 
-Personal [Claude Code plugins](https://docs.anthropic.com/en/docs/claude-code/plugins) marketplace. Opinionated developer workflows for conventional commits, pull requests, and GitHub issue linking.
+Personal [Claude Code plugins](https://docs.anthropic.com/en/docs/claude-code/plugins) marketplace. Opinionated developer workflows for conventional commits, pull requests, merges, and GitHub issue linking.
 
 ## Installation
 
@@ -19,10 +19,11 @@ Personal [Claude Code plugins](https://docs.anthropic.com/en/docs/claude-code/pl
 
 ### dev
 
-Developer workflows for conventional commits, pull requests, and GitHub issues.
+Developer workflows for conventional commits, pull requests, merges, and GitHub issues.
 
 | Skill | Command | Description |
 | --- | --- | --- |
 | commit | `/commit` | Conventional commits with branch safety guards and GitHub issue linking |
 | pr | `/pr` | Pull request creation with GitHub issue linking and PR template support |
+| merge | `/merge` | Squash-merge a PR after CI passes, with branch cleanup |
 | issue | `/issue` | Structured GitHub issue creation for user stories, bugs, and chores |

@@ -137,14 +137,13 @@ because...". Omit this section entirely if there's nothing noteworthy.]
 If a project PR template was found in Step 3, fill in that template instead of the default structure
 above. Apply the same principles: be substantive, skip irrelevant sections, don't pad with filler.
 
-### Step 6 — Review and Confirm
+### Step 6 — Push and Create
 
-Present the full PR (title + body) to the user. Ask if they want to change anything. Iterate until
-approved.
-
-### Step 7 — Push and Create
+Create the PR directly using the drafted title and body from Step 5. **Do not pause for
+confirmation** — the user sees the draft as you present it and will tell you if they want changes.
+Asking "shall I create the PR?" is unnecessary friction.
 
 1. Push the branch to the remote: `git push -u origin <branch-name>`.
-2. Create the PR using `gh pr create` with the approved title and body. Use a HEREDOC to pass the
-   body for correct formatting.
+2. Create the PR using `gh pr create` with the drafted title and body. Use a HEREDOC to pass the
+   body for correct formatting. **Do not use temporary files for the PR title or body.**
 3. Report the PR URL to the user.

@@ -1,7 +1,7 @@
 {
   "name": "dev",
-  "version": "0.1.0",
-  "description": "Developer workflows: conventional commits, pull requests, and GitHub issues",
+  "version": "0.2.0",
+  "description": "Developer workflows: conventional commits, pull requests, merges, and GitHub issues",
   "author": {
     "name": "Lee Cheneler"
   }

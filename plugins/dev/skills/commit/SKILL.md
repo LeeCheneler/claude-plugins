@@ -138,10 +138,11 @@ Draft a commit message following conventional commit format:
 - File-by-file changelogs (the diff provides this)
 - `Co-Authored-By` trailers
 
-### Step 8 — Confirm and Commit
+### Step 8 — Commit
 
-Present the full commit message to the user. Ask for confirmation or changes. Once approved, run the
-commit.
+Commit directly using the drafted message from Step 7. **Do not pause for confirmation** — the
+user sees the drafted message as you present it and will tell you if they want changes. Asking
+"shall I commit?" is unnecessary friction.
 
 If a pre-commit hook fails, diagnose the issue, fix it, re-stage, and create a **new** commit (do
 NOT amend).
