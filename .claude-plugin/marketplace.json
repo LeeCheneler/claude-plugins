@@ -11,7 +11,7 @@
     {
       "name": "dev",
       "source": "./plugins/dev",
-      "description": "Developer workflows: conventional commits, pull requests, merges, and GitHub issues"
+      "description": "Developer workflows: conventional commits, pull requests, merges, GitHub issues, and dependency patching"
     }
   ]
 }
