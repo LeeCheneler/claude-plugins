@@ -27,18 +27,24 @@ You must NOT commit directly to main/master. Create a new branch first:
 
 1. Analyse the staged/unstaged changes to understand the nature of the work (feat, fix, chore,
    docs, refactor, test, ci, perf, style, build).
-2. Use `AskUserQuestion` to ask about GitHub issue linking. You MUST present exactly these three
+2. **Check if an issue is already known from conversation context.** If the work in this
+   conversation has clearly been about a specific GitHub issue (e.g. you opened it earlier with
+   `/issue`, the user referenced `#123`, or you've been implementing a known issue), skip the
+   question entirely and use that issue number. Do not ask redundantly — it is friction. Only
+   proceed to the question below if there is genuine ambiguity about which issue (if any) this
+   work relates to.
+3. Use `AskUserQuestion` to ask about GitHub issue linking. You MUST present exactly these three
    options in exactly this order — do not omit, reorder, or rephrase any option:
    - **1. Yes** — provide an existing GitHub issue URL or number
    - **2. No, create one** — create a GitHub issue for the work being carried out
    - **3. No** — skip issue linking entirely
-3. **If "Yes":** Note the issue number and incorporate it into the branch name.
-4. **If "No, create one":** Use the `gh` CLI to create a GitHub issue for the work being carried
+4. **If "Yes":** Note the issue number and incorporate it into the branch name.
+5. **If "No, create one":** Use the `gh` CLI to create a GitHub issue for the work being carried
    out. Derive the issue title and body from the staged/unstaged changes. Once created, note the
    issue number for incorporation into the branch name.
-5. **If "No":** Continue without any issue reference.
-6. Propose a branch name following the convention below and confirm with the user.
-7. Create and switch to the new branch with `git checkout -b <branch-name>`.
+6. **If "No":** Continue without any issue reference.
+7. Propose a branch name following the convention below and confirm with the user.
+8. Create and switch to the new branch with `git checkout -b <branch-name>`.
 
 **If on an existing branch** that is NOT main/master, continue to Step 3. Do not rename or
 re-create the branch — respect the user's current branch.
@@ -47,6 +53,13 @@ re-create the branch — respect the user's current branch.
 
 If this step has not already been handled as part of Step 2 (branch safety on main/master), ask the
 user about GitHub issue linking now.
+
+**First, check if an issue is already known from conversation context.** If the work in this
+conversation has clearly been about a specific GitHub issue (e.g. you opened it earlier with
+`/issue`, the user referenced `#123`, the current branch name encodes an issue number, or you've
+been implementing a known issue), skip the question entirely and use that issue number for the
+commit footer. Do not ask redundantly — it is friction. Only proceed to the question below if
+there is genuine ambiguity about which issue (if any) this work relates to.
 
 Use `AskUserQuestion` to ask about GitHub issue linking. You MUST present exactly these three
 options in exactly this order — do not omit, reorder, or rephrase any option:

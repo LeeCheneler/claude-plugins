@@ -66,6 +66,14 @@ If no template is found, use the default structure from Step 5.
 
 ### Step 4 — GitHub Issue Linking
 
+**First, check if an issue is already known from conversation context.** If the work on this
+branch has clearly been about a specific GitHub issue (e.g. you opened it earlier with `/issue`,
+the user referenced `#123`, the branch name encodes an issue number like `feat/42-...`, commit
+footers reference an issue, or you've been implementing a known issue), skip the question
+entirely and use that issue number in the PR description. Do not ask redundantly — it is
+friction. Only proceed to the question below if there is genuine ambiguity about which issue
+(if any) this PR relates to.
+
 Use `AskUserQuestion` to ask the user about GitHub issue linking. You MUST present exactly these
 three options in exactly this order — do not omit, reorder, or rephrase any option:
 
