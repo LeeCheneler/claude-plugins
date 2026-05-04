@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+echo "[dev plugin] deps check ran"
+
 missing=()
 command -v typescript-language-server >/dev/null || missing+=("typescript-language-server")
 command -v terraform-ls >/dev/null || missing+=("terraform-ls")
