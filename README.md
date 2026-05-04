@@ -28,3 +28,12 @@ Developer workflows for conventional commits, pull requests, merges, GitHub issu
 | merge              | `/merge`              | Squash-merge a PR after CI passes, with branch cleanup                            |
 | issue              | `/issue`              | Structured GitHub issue creation for user stories, bugs, and chores               |
 | patch-dependencies | `/patch-dependencies` | Patch Dependabot alerts across repos via overrides/resolutions, lockfile-only PRs |
+
+#### LSP check
+
+On session start the plugin checks for language servers it expects and prints an install hint for any that are missing. Currently checked:
+
+| Binary                      | Install                                          |
+| --------------------------- | ------------------------------------------------ |
+| `typescript-language-server` | `npm i -g typescript-language-server typescript` |
+| `terraform-ls`              | `brew install hashicorp/tap/terraform-ls`        |
