@@ -12,9 +12,9 @@ if ! command -v terraform-ls >/dev/null 2>&1; then
 fi
 
 if [ ${#missing[@]} -gt 0 ]; then
-  echo "[dev plugin] LSP binaries missing — language intelligence will be unavailable until installed:"
+  echo "[dev plugin] LSP binaries missing — language intelligence will be unavailable until installed:" >&2
   for entry in "${missing[@]}"; do
-    echo "  • $entry"
+    echo "  • $entry" >&2
   done
 fi
 
