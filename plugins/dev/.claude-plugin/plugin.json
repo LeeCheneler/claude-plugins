@@ -1,6 +1,6 @@
 {
   "name": "dev",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Developer workflows: conventional commits, pull requests, merges, GitHub issues, and dependency patching",
   "author": {
     "name": "Lee Cheneler"
