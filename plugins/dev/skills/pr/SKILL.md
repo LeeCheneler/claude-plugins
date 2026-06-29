@@ -66,34 +66,12 @@ If no template is found, use the default structure from Step 5.
 
 ### Step 4 — GitHub Issue Linking
 
-**First, check if an issue is already known from conversation context.** If the work on this
+**Link an issue only if one is already known from conversation context.** If the work on this
 branch has clearly been about a specific GitHub issue (e.g. you opened it earlier with `/issue`,
 the user referenced `#123`, the branch name encodes an issue number like `feat/42-...`, commit
-footers reference an issue, or you've been implementing a known issue), skip the question
-entirely and use that issue number in the PR description. Do not ask redundantly — it is
-friction. Only proceed to the question below if there is genuine ambiguity about which issue
-(if any) this PR relates to.
-
-Use `AskUserQuestion` to ask the user about GitHub issue linking. You MUST present exactly these
-three options in exactly this order — do not omit, reorder, or rephrase any option:
-
-- **1. Yes** — provide an existing GitHub issue URL or number
-- **2. No, create one** — create a GitHub issue for the work being carried out
-- **3. No** — skip issue linking entirely
-
-**If "Yes":**
-
-Note the issue number. Include it in the PR description.
-
-**If "No, create one":**
-
-Use the `gh` CLI to create a GitHub issue for the work being carried out. Derive the issue title and
-body from the branch's commits and diff. Once created, note the issue number for inclusion in the PR
-description.
-
-**If "No":**
-
-Continue without any issue reference.
+footers reference an issue, or you've been implementing a known issue), use that issue number in
+the PR description. Do not ask the user about issue linking and do not create a new issue — if no
+issue is already known, simply continue without one.
 
 ### Step 5 — Draft the PR
 
