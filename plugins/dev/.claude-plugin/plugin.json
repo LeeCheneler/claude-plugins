@@ -1,7 +1,7 @@
 {
   "name": "dev",
-  "version": "0.5.5",
-  "description": "Developer workflows: conventional commits, pull requests, merges, GitHub issues, and dependency patching",
+  "version": "0.6.0",
+  "description": "Development skills: kickoff, design, testing, frontend, reviews, user stories, worktrees, and game development",
   "author": {
     "name": "Lee Cheneler"
   }
