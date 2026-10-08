@@ -1,6 +1,6 @@
 # leecheneler-plugins
 
-Personal [Claude Code plugins](https://code.claude.com/docs/en/plugins) marketplace. Opinionated skills for development kickoff, software design, testing, frontend design, change reviews, user stories, worktree management, and game development.
+Personal [Claude Code plugins](https://code.claude.com/docs/en/plugins) marketplace. Opinionated skills for development kickoff, software design, testing, frontend design, change reviews, technical writing, user stories, worktree management, and game development.
 
 ## Installation
 
@@ -29,6 +29,7 @@ Development guidance with a worktree-based lifecycle, commit-by-commit sign-off,
 | git-worktree-management | `/dev:git-worktree-management` | Create and clean up worktrees with the `new-worktree` and `rm-worktree` helpers |
 | review-change | `/dev:review-change` | Read-only, evidence-based review of a diff, branch, or PR on request |
 | software-design | `/dev:software-design` | Maintainable software design, implementation, and architecture review |
+| technical-writing | `/dev:technical-writing` | Concise, evidence-backed ADRs, RFCs, technical articles, engineering guides, and prose reviews |
 | testing-methodology | `/dev:testing-methodology` | Risk-based testing and test-quality review |
 | user-stories | `/dev:user-stories` | Agent-ready stories with testable acceptance criteria and constraints |
 
