@@ -11,7 +11,7 @@
     {
       "name": "dev",
       "source": "./plugins/dev",
-      "description": "Development skills: kickoff, design, testing, frontend, reviews, user stories, worktrees, and game development"
+      "description": "Development skills: kickoff, design, testing, frontend, reviews, technical writing, user stories, worktrees, and game development"
     }
   ]
 }

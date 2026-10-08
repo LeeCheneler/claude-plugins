@@ -1,7 +1,7 @@
 {
   "name": "dev",
-  "version": "0.6.0",
-  "description": "Development skills: kickoff, design, testing, frontend, reviews, user stories, worktrees, and game development",
+  "version": "0.7.0",
+  "description": "Development skills: kickoff, design, testing, frontend, reviews, technical writing, user stories, worktrees, and game development",
   "author": {
     "name": "Lee Cheneler"
   }
